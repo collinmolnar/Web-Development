@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font:  Arial, Helvetica, sans-serif;
+	background: url(../images/background.jpg) repeat;
+	margin: 0;
+}
+#container {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: black;
+	border-image: none;
+	border-style: solid;
+	border-width: 0 3px;
+	margin: auto;
+	position: relative;
+	width: 786px;
+	background-color: #9697e5;
+}
+#header {
+	background: url(../images/header.gif) repeat scroll 0 0 #003366;
+	height: 100px;
+}
+#header ul {
+	list-style: none;
+	margin: 0;
+	padding: 76px 0 0 175px;
+}
+#header li {
+	float: left;
+	background-size: contain;
+	list-style-type: none;
+}
+#header a {
+	display: compact;
+	background: url(../images/tab.gif) no-repeat scroll left top transparent;
+	color: #FFFFCC;
+	text-decoration: none;
+	padding: .75em 1em 0.25em;
+	background-size: cover;
+	position: inherit;
+	margin-right: .5em;
+}
+#header a:hover {
+	background: none repeat scroll 0 0 #3399CC;
+	color: white;
+}
+
+#header #selected {
+	font-weight: bold;
+	background-image: url();
+}
+#header #selected li {
+	background: url(../images/tabselected.gif)
+}
+#header #selected a {
+	display: compact;
+	background: url(../images/tabselected.gif) no-repeat scroll left top transparent;
+	color: #FFFFCC;
+	text-decoration: none;
+	padding: .75em 1em 0.25em;
+	background-size: cover;
+	position: inherit;
+	margin-right: .5em;
+}
+#navigation {
+	position: absolute;
+	top: 100px;
+	margin-top: 0.5em;
+	left: 0px;
+	width: 10em;
+}
+#navigation, #navigation ul {
+	padding: 0;
+	list-style: none;
+}
+#navigation ul a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	border-left: 3px solid #35368c;
+	padding: 0 .5em;
+	margin: 0 1em 3px 1em;
+	background-color: #5053D3;
+}
+#navigation a:hover {
+	background: none repeat scroll 0 0 #3399CC;
+	border-color: white;
+}
+#navigation a:visited {
+	color: #CCCCCC;
+}
+#navigationChooser, #navigationChooser ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	float: left;
+	width: 11em;
+}
+#navigationChooser li {
+	position: relative;
+	float: left;
+	line-height: 1.25em;
+	margin-bottom: -1px;
+	width: 10.5em;
+}
+#navigationChooser li ul {
+	position: absolute;
+	left: -999em;
+	margin-left: 8em;
+	margin-top: -1.5em;
+}
+#navigationChooser li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	border-left: 3px solid #35368c;
+	padding: 0 .5em;
+	margin: 0 1.5em 3px 1em;
+	background-color: #5053D3;
+}
+#navigationChooser li a:hover {
+	background: none repeat scroll 0 0 #3399CC;
+	border-color: white;
+}
+#navigationChooser li:hover ul, #navigationChooser li li:hover ul, #navigationChooser li.sfhover ul {
+	left: auto;
+}
+ #navigationChooser li:hover ul ul, #navigationChooser li:sfhover ul ul {
+ left: -999em;
+}
+#content {
+	xpadding: 1px 1em 2em 1em;
+	border-left: 175px solid #9697e5;
+	background: white;
+	padding: 1px 20px 1em 40px;
+	height: auto;
+}
+#content p {
+	text-indent: 0.5in;
+	line-height: 200%;
+}
+#content img {
+	padding: 1px;
+	border: none;
+	float: none;
+	margin: 0 0 1em 1em;
+	width: 554px;
+}
+h2 {
+	font-size: 1.5em;
+	color: #036;
+}
+h3 {
+	font-size: 1em;
+	color: #000;
+}
+/* CSS Document */

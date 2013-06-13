@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Multi-Genre Research Essay</title>
+  <link rel="stylesheet" type="text/css" href="../../css/Cases.css" />
+  <script src="../js/SubList.js"></script>
+  <script type="text/javascript">
+	function integerOverflow(){
+		var x = document.getElementById('number').value;
+		if(x == "" || isNaN(x)){
+			alert("Not Numberic");
+        } else if( x > 32767) {
+			alert("You just blew up a $370 million rocket!!!");
+		} else {
+			alert("Houston we have liftoff"); 
+		}
+	}
+  </script>
+  </head>
+  <body>
+  
+  <div id="container">
+    <div id="header">
+      <ul id="tabs">
+        <li> <a href="ariane5-article.html">News Article</a></li>
+        <li> <a href="ariane5-summary.html">Summary</a></li>
+        <li id="selected"> <a href="#">Code Example</a></li>
+      </ul>
+    </div>
+    <div id="navigation">
+      <ul>
+        <li><a href="../../index.html">Intro</a> </li>
+        <div id="navigationChooser">
+          <li><a href="#">Cases</a>
+            <ul>
+              <li><a href="../mars/mars-article.html">Mars Climate Orbiter</a></li>
+              <li><a href="../patroit/patroit-article.html">Patriot Missile</a></li>
+              <li><a href="../knight/knight-article.html">Knight Capital Group</a></li>
+              <li><a href="../therac/therac-article.html">Therac-25 Radiation Therapy</a></li>
+            </ul>
+          </li>
+        </div>
+      </ul>
+      <ul>
+        <li><a href="../../otherdocuments/solutions.html">Solutions?</a></li>
+      </ul>
+      <ul>
+        <li><a href="../../otherdocuments/references.html">References</a></li>
+        <li><a href="../../otherdocuments/coverletter.html">Cover Letter</a></li>
+        <div id="navigationChooser">
+          <li><a href="#">Other Documents</a>
+            <ul>
+              <li><a href="../../otherdocuments/roughdraft.html">Rough Draft</a></li>
+              <li><a href="../../otherdocuments/importantdocument.html">Important Document</a></li>
+            </ul>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div id="content">
+      <h2> What Caused Ariane 5 to Explode </h2>
+      <h3> Numbers in computers can be stored in several categories.</h3>
+      <h3> The two categories involved in the Ariane 5 explosion are 64-bit floating point numbers, and 16-bit integers.</h3>
+      <p>1. Ariane 5 held horizontal acceleration in a 64-bit floating point number (range of -10<sup>308</sup> to 10<sup>308</sup>).</p>
+      <p>2. The 64-bit floating point number was converted into a 16-bit signed integer (range of -32,768 to 32,767)</p>
+      <p>3. When horizontal acceleration reached a number above 32,767, the program was not able to store the number correctly. This is called a integer overflow, and is what caused the explosion[5]. </p>
+      <h3> Below is a program that is similar to the code in Ariane 5.</h3>
+      <p> Please input a number less than or equal to 32,767<br />
+        Then input a number greater than 32,767.</p>
+      <p><strong>DO NOT INCLUDE A COMMA</strong></p>
+      <input id="number" type="text"/>
+      <button type="button" onclick="integerOverflow()">Test Rocket</button>
+    </div>
+  </div>
+</body>
+</html>

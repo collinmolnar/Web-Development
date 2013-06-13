@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Multi-Genre Research Essay</title>
+<link rel="stylesheet" type="text/css" href="css/indexStyle.css" />
+<script src="js/SubList.js"></script>
+<script type="text/javascript">
+function changeImage(){
+	element=document.getElementById("code")
+	if(element.src.match("images/doccode.gif")){
+		element.src = "images/code.gif";
+	} else {
+		element.src = "images/doccode.gif";
+	}
+}
+</script>
+</head>
+<body>
+<div id="container">
+  <div id="header"> </div>
+  <div id="navigation">
+    <ul>
+      <div id="navigationChooser">
+        <li><a href="#">Cases</a>
+          <ul>
+            <li><a href="cases/ariane5/ariane5-article.html">Ariane 5</a></li>
+            <li><a href="cases/mars/mars-article.html">Mars Climate Orbiter</a></li>
+            <li><a href="cases/patroit/patroit-article.html">Patriot Missile</a></li>
+            <li><a href="cases/knight/knight-article.html">Knight Capital Group</a></li>
+            <li><a href="cases/therac/therac-article.html">Therac-25 Radiation Therapy</a></li>
+          </ul>
+        </li>
+      </div>
+    </ul>
+    <ul>
+      <li><a href="otherdocuments/solutions.html">Solutions?</a></li>
+    </ul>
+    <ul>
+      <li><a href="otherdocuments/references.html">References</a></li>
+      <li><a href="otherdocuments/coverletter.html">Cover Letter</a></li>
+      <div id="navigationChooser">
+        <li><a href="#">Other Documents</a>
+          <ul>
+            <li><a href="otherdocuments/roughdraft.html">Rough Draft</a></li>
+            <li><a href="otherdocuments/importantdocument.html">Important Document</a></li>
+          </ul>
+        </li>
+      </div>
+    </ul>
+  </div>
+  <div id="content">
+    <h2>Introduction to the Software Engineering Crisis</h2>
+    <p>What does the Ariane 5 rocket, Mars Climate Orbiter, Therac-25 radiation therapy machine, Patriot surface-to-air missile, and Knight Capital all have in common? They have all suffered in some way from software bugs. These software bugs have caused an immense loss of money, and even cost some people their lives. For example, the Ariane 5 rocket flight cost over $370 million USD[1]. In addition on February 25, 1991, a Patriot missile suffered a software error that failed to intercept a Iraqi Scud missile killing 28 United States Army soldiers.[2]</p>
+    <p>Many people outside the software industry  take technology for granted and they do not realize how easy it is to create a bug in the software, and how they can affect common people. A lot of people do not know that a nuclear war almost broke out during the Cold War because of a computer bug. In September 1983. A malfunctioning computer in the Soviet Union's new Oko early-warning system detected five ballistic missile from the United Stated headed towards the Soviet Union. Of course this did not happen! The Soviet officer monitoring the system quickly rationalized that if the United States initiated a nuclear attack they would certainly send more than five missiles[3]. If the Soviet Union followed correct procedure then the world as we know it would be completely different or might have even resulted in the destruction of civilization. </p>
+    <h2>Why is There a Crisis?</h2>
+    <h3>The ability to Release Software on Time</h3>
+    <ul>
+      <li> Schedules designed by someone with less experienced with software engineering will want a product out by a certain time, but this is simply not feasible.</li>
+      <li> Before a project is even started to be coded there is a lot of design and requirement that need to be considered and documented.
+        <ul>
+          <li>In the middle of the project a requirement or feature could be added completely changing all previous world.</li>
+        </ul>
+      </li>
+      <li>Bad Design can lead to bugs in code causing even more delays.</li>
+      <li>Unrealistic requirements that developers cannot fill.
+        <ul>
+          <li>Can else be caused by bad communication between developers and end-users.</li>
+        </ul>
+    </ul>
+    <h3>Program Code That is Difficult to Maintain and Update</h3>
+    <p> Ever notice how your Window operating system is constantly updating, or your mobile device is always installing upgrade? This is because as software is released developers and managers find bugs within the code or come up with a new feature that would be useful. Most of the time the software developers who wrote the original code are not the ones who are updating the software. So how are these developers supposed to know what the old code is doing, and how to upgrade it?</p>
+    <p>One method to create readable code is by following coding standards. Using these standards programmers can understand the types of variables, methods, and makes it easy for an one else reading the code. Another way to help programmers understand code is to use documentation. In the Java programming language is called Javadoc. Here is an example of how Java doc can explain what code is doing.<br /  /><em>The comments are between</em><br />
+    /** <br />
+    * <br/>
+    /** <br  />
+    and comments are after "//" </p>
+     <img id="code" onclick="changeImage()" src="images/code.gif" /> <br /> Does the code with comments make more sense?</p>
+    <h3>Software is Intangible</h3>
+    <p> When software is delivered to a client they do not receive anything physical. Some client do not understand the actual value it provides to the company, they take it for granted. As an example, people use Microsoft Word all the time and do not realize how much longer and harder it is to type and edit a document. This also causes problems with meeting deadlines.</p>
+    <p>The developing team responsible software cannot give visible evidence of the progress to the client, unlike civil engineers who can visually show the progress of a bridge being built. This can lead to exaggeration or even lying about deadlines. As with any type of engineering, software engineers must be civil.</p>
+  </div>
+</div>
+</body>
+</html>
